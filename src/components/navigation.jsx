@@ -1,17 +1,16 @@
 import React from "react";
+import logo from '../assets/logo.png';
 
 export const Navigation = (props) => {
   React.useEffect(() => {
     const myNav = document.getElementById("menu");
-    // myNav.addEventListener('scroll', );
-    window.onscroll = function () {
-      // console.log([...myNav.classList]);
+    window.onscroll = () => {
       if (document.body.scrollTop >= 200) {
-        console.log([...myNav.classList].includes('nav-colored'));
         if ([...myNav.classList].includes('nav-colored')) return;
         myNav.classList.add("nav-colored");
         myNav.classList.remove("transparent");
       } else {
+        if ([...myNav.classList].includes('transparent')) return;
         myNav.classList.add("transparent");
         myNav.classList.remove("nav-colored");
       }
@@ -29,11 +28,11 @@ export const Navigation = (props) => {
           >
             {" "}
             <span className="sr-only">Toggle navigation</span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
+            <span className="icon-bar bg-white"></span>{" "}
+            <span className="icon-bar bg-white"></span>{" "}
+            <span className="icon-bar bg-white"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top"></a>{" "}
+          <a className="navbar-brand page-scroll" href="#page-top"><img src={logo} alt="no internet connection" className="img-circle logo" /></a>{" "}
         </div>
 
         <div
@@ -42,32 +41,32 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
+              <a href="#features" className="page-scroll nav-item">
                 Особливості
               </a>
             </li>
             <li>
-              <a href="#about" className="page-scroll">
+              <a href="#about" className="page-scroll nav-item">
                 Про нас
               </a>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
+              <a href="#services" className="page-scroll nav-item">
                 Смоукер
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="page-scroll">
+              <a href="#portfolio" className="page-scroll nav-item">
                 Меню
               </a>
             </li>
             <li>
-              <a href="#team" className="page-scroll">
+              <a href="#team" className="page-scroll nav-item">
                 Команда
               </a>
             </li>
             <li>
-              <a href="#contact" className="page-scroll">
+              <a href="#contact" className="page-scroll nav-item">
                 Контакти
               </a>
             </li>

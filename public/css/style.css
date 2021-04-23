@@ -185,11 +185,20 @@ hr {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
+.bg-white {
+	background-color: #fff;
+}
 a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
 	outline: none;
 	outline-offset: none;
 }
 /* Header Section */
+.logo {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 15;
+}
 .transparent {
 	background: none;
 }
@@ -205,15 +214,24 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background-size: cover;
 	-o-background-size: cover;
 }
+.nav-item {
+	color: white;
+	font-weight: bold;
+}
 .video {
-	height: 110%;
+	height: 100%;
 	width: 100%;
+	object-fit: cover;
 	position: absolute;
 	/* z-index: -1; */
 	/* top: -77; */
 }
-.intro .overlay {
-	background: rgba(0,0,0,0.2);
+.overlay {
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	height: 100vh;
+	top: 0;
+	width: 100vw;
 }
 .intro h1 {
 	font-family: 'Raleway', sans-serif;
@@ -415,9 +433,14 @@ header .intro-text {
 /* Contact Section */
 #contact {
 	padding: 100px 0 60px 0;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	background: #000000;
 	color: rgba(255,255,255,.75);
 }
+
+.contact-input {
+	border-radius: 5px!important;
+}
+
 #contact .section-title {
 	margin-bottom: 40px;
 }
@@ -457,6 +480,7 @@ header .intro-text {
 	margin: 30px 0;
 	background: transparent;
 	border: 2px solid #fff;
+	border-radius: 8px!important;
 }
 #contact .btn-custom:hover {
 	color: #1f386e;

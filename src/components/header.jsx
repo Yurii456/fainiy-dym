@@ -5,25 +5,24 @@ export const Header = (props) => {
     <>
       <header id="header">
         <div className="intro">
-          <div className="overlay">
-            <video className="video" autoPlay loop muted>
-              <source src={nature} type="video/mp4" />
-            </video>
-            <div className="container">
-              <div className="row">
-                <div className="col-md-8 col-md-offset-2 intro-text">
-                  <h1>
-                    {props.data ? props.data.title : "Loading"}
-                    <span></span>
-                  </h1>
-                  <p>{props.data ? props.data.paragraph : "Loading"}</p>
-                  <a
-                    href="#features"
-                    className="btn btn-custom btn-lg page-scroll"
-                  >
-                    Дізнатися більше
-                  </a>{" "}
-                </div>
+          <video className="video" autoPlay loop muted>
+            <source src={nature} type="video/mp4" />
+          </video>
+          <div className="overlay" />
+          <div className="container">
+            <div className="row">
+              <div className="col-md-8 col-md-offset-2 intro-text">
+                <h1>
+                  {props.data ? props.data.title : "Loading"}
+                  <span></span>
+                </h1>
+                <p>{props.data ? props.data.paragraph : "Loading"}</p>
+                <a
+                  href="#features"
+                  className="btn btn-custom btn-lg page-scroll"
+                >
+                  Дізнатися більше
+                </a>{" "}
               </div>
             </div>
           </div>
