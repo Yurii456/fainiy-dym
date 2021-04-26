@@ -32,7 +32,7 @@ export const Navigation = (props) => {
             <span className="icon-bar bg-white"></span>{" "}
             <span className="icon-bar bg-white"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top"><img src={logo} alt="no internet connection" className="img-circle logo" /></a>{" "}
+          <a className="navbar-brand page-scroll" href="#page-top"><img src="https://i.ibb.co/HY1xDnb/logo.png" alt="no internet connection" className="img-circle logo" /></a>{" "}
         </div>
 
         <div
