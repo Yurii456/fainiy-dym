@@ -1,12 +1,12 @@
-import nature from "../assets/nature.mp4";
+import React from 'react';
 
-export const Header = (props) => {
+export const Header = (props) => {  
   return (
     <>
       <header id="header">
         <div className="intro">
-          <video className="video" autoPlay loop muted>
-            <source src={nature} type="video/mp4" />
+          <video id="video" className="video" autoPlay loop muted>
+            <source src={"https://drive.google.com/uc?export=download&id=1PXoLiR5vjeWRdWPn8I0R7nV0jwjqbO0y"} type="video/mp4" />
           </video>
           <div className="overlay" />
           <div className="container">
