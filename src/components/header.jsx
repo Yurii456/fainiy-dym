@@ -1,13 +1,15 @@
-import React from 'react';
+import React from "react";
+import ReactPlayer from 'react-player/lazy'
 
-export const Header = (props) => {  
+export const Header = (props) => {
   return (
     <>
       <header id="header">
         <div className="intro">
-          <video id="video" className="video" autoPlay loop muted>
-            <source src={"https://drive.google.com/uc?export=download&id=1ll3oBwoQG6NVyeXMYmFE086VPJt81yNe"} type="video/mp4" />
-          </video>
+          {/* <video id="video" className="video" autoPlay loop muted>
+            <source src={"https://drive.google.com/uc?export=download&id=11ZLlnSEC4t7p36NUNrZj7lK-7arrOWbI"} type="video/mp4" />
+          </video> */}
+          <ReactPlayer onError={(error) => console.log('error', error)} width="100%" height="100%" playing muted className="video" url="https://drive.google.com/uc?export=download&id=11ZLlnSEC4t7p36NUNrZj7lK-7arrOWbI" loop />
           <div className="overlay" />
           <div className="container">
             <div className="row">
