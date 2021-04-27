@@ -1,9 +1,35 @@
 {
-  "Header": {
-    "title": "ФАЙНИЙ ДИМ",
+  "navigation": {
+    "items": [
+      {
+        "label": "Особливості",
+        "link": "#features"
+      },
+      {
+        "label": "Про нас",
+        "link": "#about"
+      },
+      {
+        "label": "Смоукер",
+        "link": "#services"
+      },
+      {
+        "label": "Меню",
+        "link": "#portfolio"
+      },
+      {
+        "label": "Команда",
+        "link": "#team"
+      }
+    ],
+    "facebook": "https://www.facebook.com/%D0%9C%D1%8F%D1%81%D0%BE-%D1%83-%D0%B0%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%BC%D1%83-%D1%81%D0%BC%D0%BE%D0%BA%D0%B5%D1%80%D1%96-102155995358305https://www.facebook.com/%D0%9C%D1%8F%D1%81%D0%BE-%D1%83-%D0%B0%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%BC%D1%83-%D1%81%D0%BC%D0%BE%D0%BA%D0%B5%D1%80%D1%96-102155995358305",
+    "instagram": "https://instagram.com/king.bbq.te"
+  },
+  "header": {
+    "title": "KING BBQ",
     "paragraph": "Файне м'ясо у файному місті"
   },
-  "About": {
+  "about": {
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "Why": [
       "Lorem ipsum dolor",
@@ -11,17 +37,17 @@
       "Lorem ipsum dolor",
       "Incididunt ut labore"
     ],
-    "Why2": [
+    "why2": [
       "Aliquip ex ea commodo",
       "Lorem ipsum dolor",
       "Exercitation ullamco",
       "Lorem ipsum dolor"
     ]
   },
-  "Services": {
+  "services": {
     "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd"
   },
-  "Team": [
+  "team": [
     {
       "img": "img/team/01.jpg",
       "name": "John Doe",
@@ -43,15 +69,15 @@
       "job": "Project Manager"
     }
   ],
-  "Contact": {
+  "contact": {
     "address": "4321 California St, San Francisco, CA 12345 ",
     "phone": "+1 123 456 1234",
     "email": "info@company.com",
-    "facebook": "fb.com",
-    "twitter": "twitter.com",
+    "facebook": "https://www.facebook.com/%D0%9C%D1%8F%D1%81%D0%BE-%D1%83-%D0%B0%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%BC%D1%83-%D1%81%D0%BC%D0%BE%D0%BA%D0%B5%D1%80%D1%96-102155995358305https://www.facebook.com/%D0%9C%D1%8F%D1%81%D0%BE-%D1%83-%D0%B0%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%BC%D1%83-%D1%81%D0%BC%D0%BE%D0%BA%D0%B5%D1%80%D1%96-102155995358305",
+    "instagram": "https://instagram.com/king.bbq.te",
     "youtube": "youtube.com"
   },
-  "Features": [
+  "features": [
     {
       "icon": "fa fa-comments-o",
       "title": "Lorem ipsum",
@@ -72,5 +98,41 @@
       "title": "Lorem ipsum",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     }
-  ]
+  ],
+  "gallery": {
+    "title": "Меню",
+    "description": "description",
+    "items": [
+      {
+        "imageLink": "img/portfolio/01-small.jpg",
+        "hoverText": "some hover text",
+        "description": "some item description"
+      },
+      {
+        "imageLink": "img/portfolio/01-small.jpg",
+        "hoverText": "some hover text",
+        "description": "some item description"
+      },
+      {
+        "imageLink": "img/portfolio/01-small.jpg",
+        "hoverText": "some hover text",
+        "description": "some item description"
+      },
+      {
+        "imageLink": "img/portfolio/01-small.jpg",
+        "hoverText": "some hover text",
+        "description": "some item description"
+      },
+      {
+        "imageLink": "img/portfolio/01-small.jpg",
+        "hoverText": "some hover text",
+        "description": "some item description"
+      },
+      {
+        "imageLink": "img/portfolio/01-small.jpg",
+        "hoverText": "some hover text",
+        "description": "some item description"
+      }
+    ]
+  }
 }

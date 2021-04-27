@@ -1,16 +1,16 @@
 import React from "react";
-import logo from '../assets/logo.png';
 
-export const Navigation = (props) => {
+export const Navigation = ({ data = {} }) => {
+  console.log(data);
   React.useEffect(() => {
     const myNav = document.getElementById("menu");
     window.onscroll = () => {
       if (document.body.scrollTop >= 200) {
-        if ([...myNav.classList].includes('nav-colored')) return;
+        if ([...myNav.classList].includes("nav-colored")) return;
         myNav.classList.add("nav-colored");
         myNav.classList.remove("transparent");
       } else {
-        if ([...myNav.classList].includes('transparent')) return;
+        if ([...myNav.classList].includes("transparent")) return;
         myNav.classList.add("transparent");
         myNav.classList.remove("nav-colored");
       }
@@ -18,7 +18,7 @@ export const Navigation = (props) => {
   }, []);
   return (
     <nav id="menu" className="navbar shadow transparent navbar-fixed-top">
-      <div className="container">
+      <div className="container-fluid">
         <div className="navbar-header">
           <button
             type="button"
@@ -32,7 +32,13 @@ export const Navigation = (props) => {
             <span className="icon-bar bg-white"></span>{" "}
             <span className="icon-bar bg-white"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top"><img src="https://i.ibb.co/HY1xDnb/logo.png" alt="no internet connection" className="img-circle logo" /></a>{" "}
+          <a className="navbar-brand page-scroll" href="#page-top">
+            <img
+              src="https://i.ibb.co/rpRXRkq/IMG-20210427-214124-617.jpg"
+              alt="no internet connection"
+              className="img-circle logo"
+            />
+          </a>{" "}
         </div>
 
         <div
@@ -40,34 +46,29 @@ export const Navigation = (props) => {
           id="bs-example-navbar-collapse-1"
         >
           <ul className="nav navbar-nav navbar-right">
-            <li>
-              <a href="#features" className="page-scroll nav-item">
-                Особливості
+            {data?.items?.map(({ label, link }) => (
+              <li>
+                <a href={link} className="page-scroll nav-item">
+                  {label}
+                </a>
+              </li>
+            ))}
+            <li className="social">
+              <a
+                href={data.facebook}
+                target="_blank"
+                rel="noreferrer"
+                className="nav-item inline"
+              >
+                <i className="fa fa-facebook"></i>
               </a>
-            </li>
-            <li>
-              <a href="#about" className="page-scroll nav-item">
-                Про нас
-              </a>
-            </li>
-            <li>
-              <a href="#services" className="page-scroll nav-item">
-                Смоукер
-              </a>
-            </li>
-            <li>
-              <a href="#portfolio" className="page-scroll nav-item">
-                Меню
-              </a>
-            </li>
-            <li>
-              <a href="#team" className="page-scroll nav-item">
-                Команда
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="page-scroll nav-item">
-                Контакти
+              <a
+                href={data.instagram}
+                target="_blank"
+                rel="noreferrer"
+                className="nav-item inline"
+              >
+                <i className="fa fa-instagram"></i>
               </a>
             </li>
           </ul>

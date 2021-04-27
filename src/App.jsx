@@ -9,6 +9,7 @@ import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
+import Modal from 'react-modal';
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -18,19 +19,20 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
+    Modal.setAppElement('#root')
     setLandingPageData(JsonData);
   }, []);
 
   return (
     <div>
-      <Navigation />
-      <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Gallery />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
+      <Navigation data={landingPageData.navigation} />
+      <Header data={landingPageData.header} />
+      <Features data={landingPageData.features} />
+      <About data={landingPageData.about} />
+      <Services data={landingPageData.services} />
+      <Gallery data={landingPageData.gallery} />
+      <Team data={landingPageData.team} />
+      <Contact data={landingPageData.contact} />
     </div>
   );
 };
