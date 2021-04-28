@@ -310,10 +310,20 @@ header .intro-text {
   text-align: center;
 }
 /* Features Section */
+#features .img-features {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 100px;
+}
 #features {
   padding: 100px 0;
   background: #f6f6f6;
 }
+#features .text {
+  padding-top: 30px;
+}
+
 #features i.fa {
   font-size: 38px;
   margin-bottom: 20px;
@@ -348,13 +358,13 @@ header .intro-text {
   bottom: 0;
   left: 0;
 }
-#about .about-text li {
+#about .about-text-container li {
   margin-bottom: 6px;
   margin-left: 6px;
   list-style: none;
   padding: 0;
 }
-#about .about-text li:before {
+#about .about-text-container li:before {
   content: "\f00c";
   font-family: "FontAwesome";
   color: #5ca9fb;
@@ -362,12 +372,8 @@ header .intro-text {
   font-weight: 300;
   padding-right: 8px;
 }
-#about img {
-  width: 520px;
-  margin-top: 10px;
-  background: #fff;
-  border-right: 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+#about .about-text {
+  font-size: 20px;
 }
 #about p {
   line-height: 24px;
@@ -376,7 +382,7 @@ header .intro-text {
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #000 40%, #5ca9fb 100%);
+  background: linear-gradient(to right, #000 40%, #4A4444 100%);
   color: #fff;
 }
 #services .service-desc {
@@ -417,6 +423,11 @@ header .intro-text {
   margin-bottom: 40px;
 }
 /* Portfolio Section */
+#portfolio .menu-img {
+  width: 385px;
+  height: 255px;
+  object-fit: cover;
+}
 #portfolio {
   padding: 100px 0;
 }
@@ -656,5 +667,14 @@ label {
 	}
 	#menu .social {
 		margin-left: 0px;
-	}
+  }
+  #features .desktop {
+    width: 47%!important;
+  }
+}
+
+@media (min-width: 768px) {
+  #features .desktop {
+    width: 20%!important;
+  }
 }

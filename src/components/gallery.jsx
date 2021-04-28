@@ -26,9 +26,6 @@ export const Gallery = ({ data }) => {
       <div className="container">
         <div className="section-title">
           <h2>{data?.title}</h2>
-          <p>
-            {data?.description}
-          </p>
         </div>
 
         <div className="row">
@@ -47,7 +44,7 @@ export const Gallery = ({ data }) => {
                     </div>
                     <img
                       src={item.imageLink}
-                      className="img-responsive"
+                      className="img-responsive menu-img"
                       alt="Project Title"
                     />
                   </div>

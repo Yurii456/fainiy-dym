@@ -8,11 +8,11 @@ export const Features = (props) => {
         <div className='row'>
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.title}-${i}`} className='col-xs-6 col-md-3'>
+                <div key={`${d.title}-${i}`} className='col-xs-6 desktop'>
                   {' '}
-                  <i className={d.icon}></i>
-                  <h3>{d.title}</h3>
-                  <p>{d.text}</p>
+                  <img className="img-features" src={d.imageUrl} alt="no internet" />
+                  {/* <h3>{d.title}</h3> */}
+                  <p className="text">{d.text}</p>
                 </div>
               ))
             : 'Loading...'}

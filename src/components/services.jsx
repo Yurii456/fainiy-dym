@@ -3,13 +3,10 @@ export const Services = ({ data }) => {
     <div id='services' className='text-center'>
       <div className='container'>
         <div className='section-title'>
-          <h2>Смоукер</h2>
+          <h2>{data?.title}</h2>
           <p>
-           {data?.title}
+           {data?.subtitle}
           </p>
-        </div>
-        <div className='row'>
-
         </div>
       </div>
     </div>
