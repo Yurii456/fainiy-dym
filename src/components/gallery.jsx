@@ -1,26 +1,29 @@
 import React from "react";
-import Modal, { useModal } from "./Modal";
-
-const ItemModal = ({ activeItem, isVisible, hideModal }) => {
-  return (
-    <Modal isVisible={isVisible} closeModal={hideModal}>
-      <img src={activeItem?.imageLink} alt="no internet" />
-      <p>{activeItem?.description}</p>
-    </Modal>
-  );
-};
+import ImageViewer from "react-simple-image-viewer";
 
 export const Gallery = ({ data }) => {
-  const [activeItem, setActiveItem] = React.useState();
-  const { showModal, hideModal, isVisible } = useModal();
-  const handleClickItem = React.useCallback(
-    (data) => {
-      setActiveItem(data);
-      showModal();
-    },
-    [showModal]
+  const [currentImage, setCurrentImage] = React.useState(0);
+  const [isViewerOpen, setIsViewerOpen] = React.useState(false);
+  const images = React.useMemo(
+    () => data?.items?.map((item) => item.imageLink),
+    [data?.items]
   );
 
+  const closeImageViewer = React.useCallback(() => {
+    setCurrentImage(0);
+    setIsViewerOpen(false);
+  }, []);
+
+  const handleClickItem = React.useCallback(
+    (data) => {
+      setIsViewerOpen(true);
+      const activeIndex = images.find(
+        ({ imageLink }) => imageLink === data.imageLink
+      );
+      setCurrentImage(activeIndex);
+    },
+    [images]
+  );
   return (
     <div id="portfolio" className="text-center">
       <div className="container">
@@ -33,9 +36,7 @@ export const Gallery = ({ data }) => {
             {data?.items?.map((item) => (
               <div key={item.imageLink} className="col-sm-6 col-md-4 col-lg-4">
                 <button
-                  onClick={() =>
-                    handleClickItem(item)
-                  }
+                  onClick={() => handleClickItem(item)}
                   className="portfolio-item item-btn"
                 >
                   <div className="hover-bg">
@@ -54,11 +55,13 @@ export const Gallery = ({ data }) => {
           </div>
         </div>
       </div>
-      <ItemModal
-        activeItem={activeItem}
-        hideModal={hideModal}
-        isVisible={isVisible}
-      />
+      {isViewerOpen && (
+        <ImageViewer
+          src={images}
+          currentIndex={currentImage}
+          onClose={closeImageViewer}
+        />
+      )}
     </div>
   );
 };
