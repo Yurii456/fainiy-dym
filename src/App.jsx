@@ -16,7 +16,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
   speedAsDuration: true,
 });
 
-require('dotenv').config()
+// require('dotenv').config()
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});

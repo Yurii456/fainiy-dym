@@ -7,22 +7,29 @@ const initialState = {
   email: "",
   message: "",
 };
+const emailjsConfig = {
+  serviceId: process.env.REACT_APP_EMAIL_JS_SERVICE_ID,
+  templateId: process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID,
+  clientId: process.env.REACT_APP_EMAIL_JS_CLIENT_ID,
+};
 export const Contact = (props) => {
-  console.log(process.env);
   const [{ name, email, message }, setState] = useState(initialState);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
+
   const clearState = () => setState({ ...initialState });
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(process.env.EMAIL_JS_CLIENT_ID, process.env.EMAIL_JS_TEMPLATE_ID, e.target, process.env.EMAIL_JS_CLIENT_ID)
+      .sendForm(emailjsConfig.serviceId, emailjsConfig.templateId, e.target, emailjsConfig.clientId)
       .then(
         (result) => {
-          console.log(result.text);
+          if (result.text === 'OK') {
+            alert('Повідомлення відправлено!');
+          }
           clearState();
         },
         (error) => {
