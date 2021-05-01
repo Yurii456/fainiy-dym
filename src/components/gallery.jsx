@@ -25,13 +25,13 @@ export const Gallery = ({ data }) => {
     <div id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>{data?.title}</h2>
+          <h2 className="header-line">{data?.title}</h2>
         </div>
 
         <div className="row">
           <div className="portfolio-items">
             {data?.items?.map((item) => (
-              <div className="col-sm-6 col-md-4 col-lg-4">
+              <div key={item.imageLink} className="col-sm-6 col-md-4 col-lg-4">
                 <button
                   onClick={() =>
                     handleClickItem(item)

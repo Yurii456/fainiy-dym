@@ -1,7 +1,6 @@
 import React from "react";
 
 export const Navigation = ({ data = {} }) => {
-  console.log(data);
   React.useEffect(() => {
     const myNav = document.getElementById("menu");
     window.onscroll = () => {
@@ -26,11 +25,10 @@ export const Navigation = ({ data = {} }) => {
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
           >
-            {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
-            <span className="icon-bar bg-white"></span>{" "}
-            <span className="icon-bar bg-white"></span>{" "}
-            <span className="icon-bar bg-white"></span>{" "}
+            <span className="sr-only">Toggle navigation</span>
+            <span className="icon-bar bg-white"></span>
+            <span className="icon-bar bg-white"></span>
+            <span className="icon-bar bg-white"></span>
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
             <img
@@ -38,7 +36,7 @@ export const Navigation = ({ data = {} }) => {
               alt="no internet connection"
               className="img-circle logo"
             />
-          </a>{" "}
+          </a>
         </div>
 
         <div
@@ -47,7 +45,7 @@ export const Navigation = ({ data = {} }) => {
         >
           <ul className="nav navbar-nav navbar-right">
             {data?.items?.map(({ label, link }) => (
-              <li>
+              <li key={link}>
                 <a href={link} className="page-scroll nav-item">
                   {label}
                 </a>

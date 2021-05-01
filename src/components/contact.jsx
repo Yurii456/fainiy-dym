@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
+// import { EMAIL_JS_CLIENT_ID, EMAIL_JS_TEMPLATE_ID, EMAIL_JS_SERVICE_ID } from '../config'
 
 const initialState = {
   name: "",
@@ -7,6 +8,7 @@ const initialState = {
   message: "",
 };
 export const Contact = (props) => {
+  console.log(process.env);
   const [{ name, email, message }, setState] = useState(initialState);
 
   const handleChange = (e) => {
@@ -14,12 +16,10 @@ export const Contact = (props) => {
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
   const clearState = () => setState({ ...initialState });
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm(process.env.EMAIL_JS_CLIENT_ID, process.env.EMAIL_JS_TEMPLATE_ID, e.target, process.env.EMAIL_JS_CLIENT_ID)
       .then(
         (result) => {
           console.log(result.text);
@@ -54,6 +54,7 @@ export const Contact = (props) => {
                         className="form-control contact-input"
                         placeholder="Ім'я"
                         required
+                        value={name}
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
@@ -65,6 +66,7 @@ export const Contact = (props) => {
                         type="email"
                         id="email"
                         name="email"
+                        value={email}
                         className="form-control contact-input"
                         placeholder="Email"
                         required
@@ -80,6 +82,7 @@ export const Contact = (props) => {
                     id="message"
                     className="form-control contact-input"
                     rows="4"
+                    value={message}
                     placeholder="Повідомлення"
                     required
                     onChange={handleChange}
