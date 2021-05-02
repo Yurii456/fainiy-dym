@@ -449,9 +449,10 @@ header .intro-text {
   transform: translateY(100%);
   transition: all 0.3s;
   font-size: 18px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   font-weight: 500;
   text-transform: uppercase;
+  white-space: pre-wrap;
 }
 .hover-bg:hover .hover-text > h4 {
   opacity: 1;

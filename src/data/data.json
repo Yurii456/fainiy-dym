@@ -31,7 +31,7 @@
   },
   "about": {
     "imageUrl": "https://i.ibb.co/gWm0Hk5/about-us.jpg",
-    "paragraph": "Мене звуть Шліхта Євген, мені 25, і напередодні цієї дати мені почала не давати спокою думка, що я нічого не вмію робити. У довгих пошуках себе, я зрозумів - готувати м'ясо це моє покликання! Попрощавшись з попередньою роботою я змайстрував смокер, у якому згодом навчився ідеально готувати класичні страви техаського BBQ. Нагодувавши біля сотні людей, перевіривши і переконавшись у якості своєї праці, я вирішив започаткувати бренд KING BBQ і знайомити людей з традиційним Smoked BBQ!"
+    "paragraph": "Мене звуть Шліхта Євген, мені 25, і напередодні цієї дати я подумав: потрібно щось змінювати у своєму житті. У довгих пошуках себе, я зрозумів - готувати м'ясо це моє покликання! Попрощавшись з попередньою роботою я змайстрував смокер, у якому згодом навчився ідеально готувати класичні страви техаського BBQ. Нагодувавши біля сотні людей, перевіривши і переконавшись у якості своєї праці, я вирішив започаткувати бренд KING BBQ і знайомити людей з традиційним Smoked BBQ!"
   },
   "services": {
     "title": "Смокер",
@@ -94,12 +94,12 @@
     "items": [
       {
         "imageLink": "https://i.ibb.co/m5XspK8/menu-1.jpg",
-        "hoverText": "Рулька свинна\n290грн/кг",
+        "hoverText": "Свинна Рулька/Pork Knuckle\n290грн/кг",
         "description": "some item description"
       },
       {
         "imageLink": "https://i.ibb.co/4J0TXd1/menu-2.jpg",
-        "hoverText": "Полядвиця/pork loin bbq\n 390 грн/кг",
+        "hoverText": "Полядвиця/pork loin\n 390 грн/кг",
         "description": "some item description"
       },
       {
@@ -109,12 +109,12 @@
       },
       {
         "imageLink": "https://i.ibb.co/MPmDcLS/menu-4.jpg",
-        "hoverText": "Ребра Мармурової Телятини/Premium Marble beef ribs \n 890грн/кг",
+        "hoverText": "Ребра Мармурової яловичини/Premium Marble beef ribs \n 890грн/кг",
         "description": "some item description"
       },
       {
         "imageLink": "https://i.ibb.co/D7s43JZ/menu-5.jpg",
-        "hoverText": "Рум'яні краєчки/Premium marble beef burnt ends\n 970грн/кг",
+        "hoverText": "Обгорілі кінці з мармурової яловичини/Premium marble beef burnt ends\n 970грн/кг",
         "description": "some item description"
       },
       {
