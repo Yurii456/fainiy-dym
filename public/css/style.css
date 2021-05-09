@@ -659,8 +659,16 @@ label {
   }
   #features .text {
     word-break: break-word;
+    min-height: 170px;
   }
 }
+
+@media (max-width: 354px) { 
+  #features .text {
+    word-break: break-word;
+    min-height: 220px;
+  }
+ }
 
 @media (min-width: 768px) {
   #features .desktop {
