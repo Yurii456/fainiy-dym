@@ -15,11 +15,13 @@ export const Gallery = ({ data }) => {
   }, []);
 
   const handleClickItem = React.useCallback(
-    (data) => {
+    (currentData) => {
       setIsViewerOpen(true);
-      const activeIndex = images.find(
-        ({ imageLink }) => imageLink === data.imageLink
+      console.log(currentData.imageLink);
+      const activeIndex = images.findIndex(
+        (imageLink) => imageLink === currentData.imageLink
       );
+      console.log(activeIndex);
       setCurrentImage(activeIndex);
     },
     [images]
