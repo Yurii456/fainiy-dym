@@ -24,11 +24,16 @@ export const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(emailjsConfig.serviceId, emailjsConfig.templateId, e.target, emailjsConfig.clientId)
+      .sendForm(
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
+        e.target,
+        emailjsConfig.clientId
+      )
       .then(
         (result) => {
-          if (result.text === 'OK') {
-            alert('Повідомлення відправлено!');
+          if (result.text === "OK") {
+            alert("Повідомлення відправлено!");
           }
           clearState();
         },
@@ -117,16 +122,20 @@ export const Contact = (props) => {
               <p>
                 <span>
                   <i className="fa fa-phone"></i> Телефон
-                </span>{" "}
-                {props.data ? props.data.phone : "loading"}
+                </span>
+                <a href={`tel:${props.data?.phone}`} className="white-link">
+                  {props.data ? props.data.phone : "loading"}
+                </a>
               </p>
             </div>
             <div className="contact-item">
               <p>
                 <span>
                   <i className="fa fa-envelope-o"></i> Email
-                </span>{" "}
-                {props.data ? props.data.email : "loading"}
+                </span>
+                <a href={`mailto:${props.data?.email}`} className="white-link">
+                  {props.data ? props.data.email : "loading"}
+                </a>
               </p>
             </div>
           </div>
@@ -153,7 +162,7 @@ export const Contact = (props) => {
       {/* <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2020 Issaaf Kattan React Land Page Template. Design by{" "}
+            &copy; 2020 Issaaf Kattan React Land Page Template. Design by
             <a href="http://www.templatewire.com" rel="nofollow">
               TemplateWire
             </a>
