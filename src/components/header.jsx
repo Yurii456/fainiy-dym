@@ -10,7 +10,7 @@ export const Header = (props) => {
             <source src={"https://drive.google.com/uc?export=download&id=11ZLlnSEC4t7p36NUNrZj7lK-7arrOWbI"} type="video/mp4" />
           </video> */}
           <img src="https://i.ibb.co/vVpzqfv/2021-05-01-11-32-09.jpg" className="video" alt="no internet" />
-          <ReactPlayer width="100%" height="100%" playing muted className="video" url="https://drive.google.com/uc?export=download&id=11ZLlnSEC4t7p36NUNrZj7lK-7arrOWbI" loop />
+          <ReactPlayer width="100%" height="100%" playing muted className="video" url="https://drive.google.com/uc?export=download&id=1Kydjgu1wrXEKKJ4tBJGONewysGPs_TWY" loop />
           <div className="overlay" />
           <div className="container">
             <div className="row">
