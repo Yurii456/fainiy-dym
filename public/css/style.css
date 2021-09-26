@@ -228,7 +228,7 @@ a:focus,
   object-fit: fill;
 }
 .transparent {
-  background: none;
+  background: rgba(0, 0, 0, 0.3);;
 }
 .intro {
   /* display: table; */
