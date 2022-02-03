@@ -32,7 +32,7 @@ export const Navigation = ({ data = {} }) => {
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
             <img
-              src="https://i.ibb.co/rpRXRkq/IMG-20210427-214124-617.jpg"
+              src="https://i.ibb.co/mvR9Kc4/photo-2022-02-03-18-19-32.jpg"
               alt="no internet connection"
               className="img-circle logo"
             />

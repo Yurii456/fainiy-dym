@@ -15,6 +15,7 @@ export const Header = (props) => {
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-2 intro-text">
+                {/* <img src="https://i.ibb.co/0JwxBQk/photo-2022-02-03-18-25-04.jpg" width="100px" style={{ borderRadius: 8, opacity: 0.8 }} /> */}
                 <h1>
                   {props.data ? props.data.title : "Loading"}
                   <span></span>
