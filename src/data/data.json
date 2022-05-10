@@ -93,39 +93,27 @@
     "title": "Меню",
     "items": [
       {
-        "imageLink": "https://i.ibb.co/4dtJMwM/photo-2022-02-03-18-28-52.jpg",
-        "hoverText": "Лосось/Salmon\n790 грн/кг"
+        "imageLink": "https://i.ibb.co/jVnVKkS/photo-2022-05-10-22-19-58.jpg",
+        "hoverText": "Свинна шия/pork neck 420 грн/кг"
       },
       {
         "imageLink": "https://i.ibb.co/RgPvwsL/photo-2021-11-28-18-06-44.jpg",
         "hoverText": "Свинні ребра/Pork Ribs\n390грн/кг"
       },
       {
-        "imageLink": "https://i.ibb.co/S7XVXMJ/photo-2021-11-28-18-11-01.jpg",
+        "imageLink": "https://i.ibb.co/CmrHwSg/photo-2022-05-10-22-28-23.jpg",
         "hoverText": "Бріскет мармурової яловичини/Premium marble beef brisket\n1100грн/кг"
-      },
-      {
-        "imageLink": "https://i.ibb.co/cy8T71t/photo-2021-11-28-18-13-31.jpg",
-        "hoverText": "Рвана свинина/pulled pork\n420 грн/кг"
-      },
-      {
-        "imageLink": "https://i.ibb.co/t3f620b/photo-2021-11-28-18-09-31.jpg",
-        "hoverText": "Ребра мармурової яловичини/Premium Marble beef ribs\n790грн/кг"
-      },
-      {
-        "imageLink": "https://i.ibb.co/3c5C70L/IMG-2308.jpg",
-        "hoverText": "Яловичі щоки/Beef chicks\n580грн/кг"
       },
       {
         "imageLink": "https://i.ibb.co/17qPd6m/photo-2021-11-28-18-13-28.jpg",
         "hoverText": "Полядвиця/pork loin\n390 грн/кг"
       },
       {
-        "imageLink": "https://i.ibb.co/QvBx5J3/photo-2021-11-28-18-12-09.jpg",
+        "imageLink": "https://i.ibb.co/zHh8brC/photo-2022-05-10-22-21-46.jpg",
         "hoverText": "Підчеревена свина/Pork Belly\n350грн/кг"
       },
       {
-        "imageLink": "https://i.ibb.co/VpytfDX/photo-2021-11-28-18-16-57.jpg",
+        "imageLink": "https://i.ibb.co/Rv8RKSf/photo-2022-05-10-22-15-24.jpg",
         "hoverText": "Дегустаційний сет/Tasting set\n690грн/кг"
       }
     ]
