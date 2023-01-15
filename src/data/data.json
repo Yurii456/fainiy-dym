@@ -27,11 +27,11 @@
   },
   "header": {
     "title": "KING BBQ",
-    "paragraph": "Файне м'ясо у файному місті"
+    "paragraph": ""
   },
   "about": {
     "imageUrl": "https://i.ibb.co/gWm0Hk5/about-us.jpg",
-    "paragraph": "Мене звуть Шліхта Євген, мені 25, і напередодні цієї дати я подумав: потрібно щось змінювати у своєму житті. У довгих пошуках себе, я зрозумів - готувати м'ясо це моє покликання! Попрощавшись з попередньою роботою я змайстрував смокер, у якому згодом навчився ідеально готувати класичні страви техаського BBQ. Нагодувавши біля сотні людей, перевіривши і переконавшись у якості своєї праці, я вирішив започаткувати бренд KING BBQ і знайомити людей з традиційним Smoked BBQ!"
+    "paragraph": "Мене звуть Шліхта Євген, мені 27, коли мені виповнилося 25 я подумав: потрібно щось змінювати у своєму житті. У довгих пошуках себе, я зрозумів - готувати м'ясо це моє покликання! Попрощавшись з попередньою роботою я змайстрував смокер, у якому згодом навчився ідеально готувати класичні страви техаського BBQ. Нагодувавши біля сотні людей, перевіривши і переконавшись у якості своєї праці, я вирішив започаткувати бренд KING BBQ і знайомити людей з традиційним Smoked BBQ!"
   },
   "services": {
     "title": "Смокер",
@@ -43,7 +43,7 @@
     "subtitle": "Стараються для вас",
     "items": [
       {
-        "img": "https://i.ibb.co/hCryYBF/team-1.jpg",
+        "img": "https://i.ibb.co/gTnLVs0/2023-01-15-18-42-10.jpg",
         "name": "Євген Шліхта",
         "job": "Founder"
       },
@@ -53,7 +53,7 @@
         "job": "Co-Founder"
       },
       {
-        "img": "https://i.ibb.co/jLT0pGS/team-3.jpg",
+        "img": "https://i.ibb.co/PmdgvV5/2023-01-15-18-41-14.png",
         "name": "Котіс",
         "job": "Талісман"
       }
@@ -77,12 +77,12 @@
       "text": "Для приготування використовую лише дубові дрова природної усушки 1 рік"
     },
     {
-      "imageUrl": "https://i.ibb.co/K2b3qNm/features-3.jpg",
+      "imageUrl": "https://i.ibb.co/TYfmfnd/IMG-3021.jpg",
       "text": "Техніка приготування low and slow при 110-120C робить закопчену, пікантну скоринку, при цьому зберігаючи м'ясо соковитим всередині"
     },
     {
-      "imageUrl": "https://i.ibb.co/mCfJQDk/features-4.jpg",
-      "text": "Свинину та яловичину використовую лише найсвіжішу, лише цільними відрубами, це дозволяє максимально розкрити смак Smoked BBQ"
+      "imageUrl": "https://i.ibb.co/2NVLg9m/IMG-0461.jpg",
+      "text": "Українську мармурову яловичину готуємо лише цільними відрубами, це дозволяє максимально розкрити смак Smoked BBQ"
     },
     {
       "imageUrl": "https://i.ibb.co/rc85d7V/featires-5.jpg",
@@ -93,28 +93,23 @@
     "title": "Меню",
     "items": [
       {
-        "imageLink": "https://i.ibb.co/jVnVKkS/photo-2022-05-10-22-19-58.jpg",
-        "hoverText": "Свинна шия/pork neck 420 грн/кг"
+        "imageLink": "https://i.ibb.co/hDDPzSk/IMG-3030.jpg",
+        "hoverText": "М'якоть ребер мармурової яловичини 1300 грн/кг"
       },
       {
-        "imageLink": "https://i.ibb.co/RgPvwsL/photo-2021-11-28-18-06-44.jpg",
-        "hoverText": "Свинні ребра/Pork Ribs\n390грн/кг"
+        "imageLink": "https://i.ibb.co/WHNFGkp/IMG-3026.jpg",
+        "hoverText": "Рум'яні краєчки стейків сухої витриммки у меді з соусом BBQ \n1200грн/кг"
       },
       {
-        "imageLink": "https://i.ibb.co/CmrHwSg/photo-2022-05-10-22-28-23.jpg",
-        "hoverText": "Бріскет мармурової яловичини/Premium marble beef brisket\n1100грн/кг"
+        "imageLink": "https://i.ibb.co/wh7gpYP/IMG-3032.jpg",
+        "hoverText": "Бріскет мармурової яловичини\n1200грн/кг"
       },
       {
-        "imageLink": "https://i.ibb.co/17qPd6m/photo-2021-11-28-18-13-28.jpg",
-        "hoverText": "Полядвиця/pork loin\n390 грн/кг"
+        "imageLink": "https://i.ibb.co/Svchjs2/IMG-3025.jpg",
+        "hoverText": "Рвана мармурова яловичина \n1000 грн/кг"
       },
       {
-        "imageLink": "https://i.ibb.co/zHh8brC/photo-2022-05-10-22-21-46.jpg",
-        "hoverText": "Підчеревена свина/Pork Belly\n350грн/кг"
-      },
-      {
-        "imageLink": "https://i.ibb.co/Rv8RKSf/photo-2022-05-10-22-15-24.jpg",
-        "hoverText": "Дегустаційний сет/Tasting set\n690грн/кг"
+        "hoverText": "Щічки мармурової яловичини конфі\n1100грн/кг"
       }
     ]
   }

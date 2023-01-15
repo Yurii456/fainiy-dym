@@ -1,5 +1,6 @@
 import React from "react";
 import ImageViewer from "react-simple-image-viewer";
+import NoImage from '../assets/no-image.svg';
 
 export const Gallery = ({ data }) => {
   const [currentImage, setCurrentImage] = React.useState(0);
@@ -36,7 +37,7 @@ export const Gallery = ({ data }) => {
         <div className="row">
           <div className="portfolio-items">
             {data?.items?.map((item) => (
-              <div key={item.imageLink} className="col-sm-6 col-md-4 col-lg-4">
+              <div key={item.imageLink || item.hoverText} className="col-sm-6 col-md-4 col-lg-4">
                 <button
                   onClick={() => handleClickItem(item)}
                   className="portfolio-item item-btn"
@@ -46,7 +47,7 @@ export const Gallery = ({ data }) => {
                       <h4>{item.hoverText}</h4>
                     </div>
                     <img
-                      src={item.imageLink}
+                      src={item.imageLink || NoImage}
                       className="img-responsive menu-img"
                       alt="Project Title"
                     />
