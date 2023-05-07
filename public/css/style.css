@@ -342,6 +342,7 @@ header .intro-text {
 #about {
   padding: 100px 0;
 }
+.about-image { height: 690px }
 #about h3 {
   font-size: 22px;
   margin: 0 0 20px 0;
@@ -441,11 +442,14 @@ header .intro-text {
 .menu-item-text {
   color: gray;
   font-weight: 700;
+  padding-right: 20;
+  padding-left: 20;
 }
 .portfolio-item {
   margin: 3px -12px 3px -12px;
   padding: 0;
   border-radius: 10px;
+  width: 385px
   /* box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.05); */
 }
 .portfolio-item:hover {
@@ -676,6 +680,7 @@ label {
 }
 
 @media (max-width: 768px) {
+  .about-image { height: auto }
   #about img {
     margin: 50px 0;
   }
@@ -708,6 +713,7 @@ label {
 }
 
 @media (max-width: 354px) {
+  .about-image { height: auto }
   #features .text {
     word-break: break-word;
     min-height: 220px;

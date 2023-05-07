@@ -8,8 +8,7 @@ export const About = (props) => {
           <div className="col-xs-12 col-md-6">
             <img
               src={props.data?.imageUrl}
-              className="img-responsive"
-              style={{ height: "690px" }}
+              className="img-responsive about-image"
               alt=""
             />
           </div>
